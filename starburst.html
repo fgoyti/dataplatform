@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Platform - Interactive Starburst</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .controls {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        #visualization {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 800px;
+            background: #ffffff;
+        }
+
+        #chart {
+            position: relative;
+        }
+
+        .info-panel {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+            min-height: 100px;
+        }
+
+        .info-panel h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .info-panel p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .breadcrumb {
+            padding: 15px 20px;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb span {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        /* Tooltip styles */
+        .tooltip {
+            position: absolute;
+            padding: 12px 16px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 14px;
+            max-width: 300px;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+
+        /* Arc styles */
+        .arc {
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .arc:hover {
+            opacity: 0.8;
+        }
+
+        .arc-text {
+            pointer-events: none;
+            font-size: 12px;
+            font-weight: 600;
+            fill: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .center-text {
+            font-size: 18px;
+            font-weight: bold;
+            fill: #667eea;
+            text-anchor: middle;
+            pointer-events: none;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 18px;
+        }
+
+        .legend {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .legend-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .legend-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        /* Highlight arrow and detail box */
+        .highlight-arrow {
+            position: fixed;
+            right: calc(50% - 480px);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-right: 30px solid #667eea;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        .highlight-detail {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            width: 380px;
+            height: 180px;
+            z-index: 1000;
+            pointer-events: none;
+            border: 3px solid #667eea;
+            overflow: hidden;
+        }
+
+        .highlight-detail h2 {
+            margin: 0 0 10px 0;
+            color: #667eea;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .highlight-detail .detail-info {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .highlight-detail .detail-level {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        #visualization {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Data Platform Starburst</h1>
+            <p class="subtitle">Interactive Hierarchy Visualization</p>
+        </header>
+
+        <div class="controls">
+            <button class="btn" onclick="resetView()">🔄 Reset Rotation</button>
+        </div>
+
+        <div class="breadcrumb">
+            <span id="breadcrumb-text">Data Platform - All Levels Shown</span>
+        </div>
+
+        <div id="visualization">
+            <div class="loading">Loading data...</div>
+        </div>
+        
+        <!-- Highlight elements outside visualization div so they don't get cleared -->
+        <div class="highlight-arrow"></div>
+        <div class="highlight-detail" id="highlight-detail">
+            <h2 id="highlight-name">Data Platform</h2>
+            <div class="detail-info" id="highlight-code">Code: 15ANP</div>
+            <div class="detail-info" id="highlight-children"></div>
+            <span class="detail-level" id="highlight-level">Level 15</span>
+        </div>
+
+        <div class="info-panel">
+            <h3 id="info-title">Data Platform Visualization</h3>
+            <p id="info-description">Drag anywhere to rotate the visualization and read text at any angle. Hover over segments for details. All hierarchy levels (Data Platform → Categories → Sub-categories → Products) are displayed.</p>
+        </div>
+
+        <div class="legend">
+            <div class="legend-title">Categories:</div>
+            <div class="legend-items" id="legend-items"></div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="starburst.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Platform - Collapsible Tree</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #162e99 0%, #9380df 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .controls {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        #visualization {
+            padding: 0px;
+            min-height: 600px;
+            background: #ffffff;
+            overflow-x: auto;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 18px;
+        }
+
+        .info-panel {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .info-panel h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .info-panel p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Tree node styles */
+        .node {
+            cursor: pointer;
+        }
+
+        .node circle {
+            fill: #667eea;
+            stroke: #5568d3;
+            stroke-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .node:hover circle {
+            fill: #5568d3;
+            stroke: #4556c2;
+            r: 8;
+        }
+
+        .node text {
+            font-size: 14px;
+            font-weight: 500;
+            fill: #333;
+            pointer-events: none;
+        }
+
+        .node.has-children circle {
+            fill: #764ba2;
+            stroke: #653a91;
+        }
+
+        .node.has-children:hover circle {
+            fill: #653a91;
+        }
+
+        .node.level-17 circle {
+            fill: #2C4A52;
+            stroke: #1f3640;
+        }
+
+        .node.level-20 circle {
+            fill: #52A6A6;
+            stroke: #3d8585;
+        }
+
+        .node.level-30 circle {
+            fill: #D4B86A;
+            stroke: #b39a52;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+
+        .breadcrumb {
+            padding: 15px 20px;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .breadcrumb span {
+            color: #545f8d;
+            font-weight: 600;
+        }
+
+        .breadcrumb-item {
+            display: inline;
+        }
+
+        .breadcrumb-item:not(:last-child)::after {
+            content: " › ";
+            margin: 0 5px;
+            color: #999;
+        }
+
+        .breadcrumb-item.clickable {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .breadcrumb-item.clickable:hover {
+            color: #444444;
+        }
+
+        .node-badge {
+            font-size: 10px;
+            fill: #999;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IBM Data Platform</h1>
+        </header>
+
+        <div class="breadcrumb">
+            <div id="breadcrumb-path"></div>
+        </div>
+
+        <div id="visualization">
+            <div class="loading">Loading data...</div>
+        </div>
+    </div>
+
+    <script src="tree.js"></script>
+</body>
+</html>
