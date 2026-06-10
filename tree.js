@@ -235,7 +235,9 @@ function updateTree(source) {
             return 'middle';
         })
         .text(d => d.data.name)
-        .style('fill-opacity', 1e-6);
+        .style('fill-opacity', 1e-6)
+        .style('cursor', d => (d.data.children && d.data.children.length > 0) ? 'pointer' : 'default')
+        .on('click', (event, d) => handleNodeClick(event, d));
     
     
     // Transition nodes to their new position
