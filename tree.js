@@ -179,6 +179,49 @@ function updateTree(source) {
     const nodes = root.descendants();
     const links = root.links();
     
+    // Clamp vertical spacing to prevent excessive gaps
+    const maxLeafSpacing = 50; // Maximum pixels between leaf nodes
+    const maxParentSpacing = 100; // Maximum pixels between parent nodes
+    
+    // Group nodes by depth
+    const nodesByDepth = d3.group(nodes, d => d.depth);
+    
+    nodesByDepth.forEach((depthNodes, depth) => {
+        if (depthNodes.length > 1) {
+            // Separate leaf nodes and parent nodes
+            const leafNodes = depthNodes.filter(node => !node.children || node.children.length === 0);
+            const parentNodes = depthNodes.filter(node => node.children && node.children.length > 0);
+            
+            // Apply spacing limit to leaf nodes
+            if (leafNodes.length > 1) {
+                leafNodes.sort((a, b) => a.x - b.x);
+                const totalSpacing = leafNodes[leafNodes.length - 1].x - leafNodes[0].x;
+                const avgSpacing = totalSpacing / (leafNodes.length - 1);
+                
+                if (avgSpacing > maxLeafSpacing) {
+                    const centerY = d3.mean(leafNodes, d => d.x);
+                    leafNodes.forEach((node, i) => {
+                        node.x = centerY - ((leafNodes.length - 1) / 2 - i) * maxLeafSpacing;
+                    });
+                }
+            }
+            
+            // Apply spacing limit to parent nodes
+            if (parentNodes.length > 1) {
+                parentNodes.sort((a, b) => a.x - b.x);
+                const totalSpacing = parentNodes[parentNodes.length - 1].x - parentNodes[0].x;
+                const avgSpacing = totalSpacing / (parentNodes.length - 1);
+                
+                if (avgSpacing > maxParentSpacing) {
+                    const centerY = d3.mean(parentNodes, d => d.x);
+                    parentNodes.forEach((node, i) => {
+                        node.x = centerY - ((parentNodes.length - 1) / 2 - i) * maxParentSpacing;
+                    });
+                }
+            }
+        }
+    });
+    
     // Normalize for fixed-depth and track display level
     nodes.forEach(d => {
         d.y = d.depth * 250;
