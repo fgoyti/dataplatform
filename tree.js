@@ -353,7 +353,12 @@ function handleNodeClick(event, d) {
     if (d.data.children && d.data.children.length > 0) {
         // Navigate to this node - it becomes the new root
         currentNode = d.data;
-        breadcrumbPath.push(d.data);
+        
+        // Only add to breadcrumb if it's not already the last item
+        if (breadcrumbPath[breadcrumbPath.length - 1] !== d.data) {
+            breadcrumbPath.push(d.data);
+        }
+        
         updateTree(d.data);
         updateBreadcrumb();
     }
