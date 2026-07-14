@@ -34,19 +34,19 @@ except ImportError:
 try:
     from ibm_watsonx_ai import APIClient, Credentials
     from ibm_watsonx_ai.foundation_models import ModelInference
-    from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
+    from ibm_watsonx_ai.foundation_models.schema import TextChatParameters
 except ImportError:
     sys.exit("Missing dependency: pip install ibm-watsonx-ai openpyxl")
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-EXCEL_PATH = Path("web/UT Flat - Effective on 2026-07-06.xlsx")
+EXCEL_PATH = Path("../web/UT Flat - Effective on 2026-07-06.xlsx")
 SHEET_NAME = "Flat UT"
 
-WATSONX_URL        = os.getenv("WATSONX_URL", "https://us-south.ml.cloud.ibm.com")
+WATSONX_URL        = os.getenv("WATSONX_URL", "https://eu-gb.ml.cloud.ibm.com")
 WATSONX_API_KEY    = os.getenv("WATSONX_API_KEY", "")
 WATSONX_PROJECT_ID = os.getenv("WATSONX_PROJECT_ID", "")
 
-MODEL_ID = "meta-llama/llama-3-3-70b-instruct"
+MODEL_ID = "meta-llama/llama-4-maverick-17b-128e-instruct-fp8"
 
 # Column indices (1-based for openpyxl)
 COL_L10  = 1
@@ -94,19 +94,18 @@ def get_model(dry_run: bool):
         model_id=MODEL_ID,
         api_client=client,
         project_id=WATSONX_PROJECT_ID,
-        params={
-            GenParams.MAX_NEW_TOKENS: 150,
-            GenParams.MIN_NEW_TOKENS: 30,
-            GenParams.TEMPERATURE: 0.3,
-            GenParams.STOP_SEQUENCES: ["\n\n"],
-        },
+        params=TextChatParameters(
+            max_tokens=150,
+            temperature=0.3,
+        ),
     )
     return model
 
 
 def generate_description(model, prompt: str) -> str:
-    response = model.generate_text(prompt=prompt)
-    return response.strip()
+    messages = [{"role": "user", "content": prompt}]
+    response = model.chat(messages=messages)
+    return response["choices"][0]["message"]["content"].strip()
 
 
 def main():
@@ -132,13 +131,17 @@ def main():
     errors = 0
 
     # Row 1 is the header; data starts at row 2
-    for row in ws.iter_rows(min_row=2):
+    for row_idx, row in enumerate(ws.iter_rows(min_row=2), start=2):
         l10  = str(row[COL_L10  - 1].value or "").strip()
         l15  = str(row[COL_L15  - 1].value or "").strip()
         l17  = str(row[COL_L17  - 1].value or "").strip()
         l20  = str(row[COL_L20  - 1].value or "").strip()
         l30  = str(row[COL_L30  - 1].value or "").strip()
         desc_cell = row[COL_DESC - 1]
+        # MergedCell instances are read-only; skip them
+        if desc_cell.__class__.__name__ == "MergedCell":
+            skipped += 1
+            continue
         existing  = str(desc_cell.value or "").strip()
 
         total += 1
@@ -175,7 +178,7 @@ def main():
         print(f"  GEN   [{l30}] ...", end=" ", flush=True)
         try:
             description = generate_description(model, prompt)
-            desc_cell.value = description
+            ws.cell(row=row_idx, column=COL_DESC).value = description
             wb.save(EXCEL_PATH)   # save after every row
             print(f"OK")
             updated += 1
