@@ -1,0 +1,391 @@
+/* ─── Reset & base ─────────────────────────────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ─── Container ─────────────────────────────────────────────────────────────── */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    min-height: 400px;
+}
+
+/* ─── Header ────────────────────────────────────────────────────────────────── */
+header {
+    background: #161616;
+    color: white;
+    padding: 20px 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.accent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+        #0f62fe 0%,
+        #8a3ffc 25%,
+        #ff7eb6 50%,
+        #8a3ffc 75%,
+        #0f62fe 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.ibm-cube {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #0f62fe 0%, #8a3ffc 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.text-section h1 {
+    font-size: 2.4em;
+    font-weight: 300;
+    color: white;
+}
+
+.text-section h1 .highlight {
+    font-weight: 600;
+    background: linear-gradient(90deg, #0f62fe 0%, #8a3ffc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 0.95em;
+    opacity: 0.7;
+    margin-top: 4px;
+    color: white;
+}
+
+/* ─── Bubble colours by level ───────────────────────────────────────────────── */
+:root {
+    --color-l10: #667eea;
+    --color-l15: #2C4A52;
+    --color-l17: #52A6A6;
+    --color-l20: #D4B86A;
+    --color-l30: #A67C52;
+}
+
+/* ─── Intro panel ───────────────────────────────────────────────────────────── */
+.intro-panel {
+    padding: 20px 28px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f7f8fa;
+}
+
+.intro-panel p {
+    font-size: 0.93em;
+    color: #1f2328;
+    line-height: 1.65;
+    max-width: 860px;
+}
+
+.intro-panel p + p {
+    margin-top: 10px;
+}
+
+.intro-hint {
+    color: #57606a;
+}
+
+/* ─── Search bar ────────────────────────────────────────────────────────────── */
+.search-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.search-label {
+    font-size: 0.93em;
+    font-weight: 600;
+    color: #1f2328;
+    white-space: nowrap;
+}
+
+.search-input-wrap {
+    position: relative;
+    flex: 1;
+    min-width: 220px;
+    max-width: 460px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 0.93em;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+    color: #1f2328;
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    border-color: #0f62fe;
+    box-shadow: 0 0 0 2px rgba(15, 98, 254, 0.15);
+}
+
+.search-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    max-height: 260px;
+    overflow-y: auto;
+    z-index: 200;
+}
+
+.search-dropdown.open {
+    display: block;
+}
+
+.search-option {
+    padding: 9px 14px;
+    font-size: 0.9em;
+    color: #1f2328;
+    cursor: pointer;
+    line-height: 1.4;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.search-option:last-child {
+    border-bottom: none;
+}
+
+.search-option:hover,
+.search-option.focused {
+    background: #f0f4ff;
+    color: #0f62fe;
+}
+
+.search-option mark {
+    background: none;
+    color: #0f62fe;
+    font-weight: 700;
+}
+
+.search-option .search-breadcrumb {
+    display: block;
+    font-size: 0.78em;
+    color: #57606a;
+    margin-top: 2px;
+}
+
+.search-no-results {
+    padding: 10px 14px;
+    font-size: 0.88em;
+    color: #57606a;
+    font-style: italic;
+}
+
+/* ─── Nav row ───────────────────────────────────────────────────────────────── */
+#nav-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 14px 24px;
+    background: #f7f8fa;
+    border-bottom: 1px solid #e5e7eb;
+    min-height: 56px;
+}
+
+#nav-row:empty {
+    padding: 0;
+    min-height: 0;
+    border-bottom: none;
+}
+
+.nav-arrow {
+    font-size: 18px;
+    color: #b0b7c3;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+/* ─── Active levels area ────────────────────────────────────────────────────── */
+#levels-area {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 160px;
+}
+
+.level-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ─── Bubbles ───────────────────────────────────────────────────────────────── */
+.bubble {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s ease;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.bubble:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.bubble:active {
+    transform: translateY(0);
+}
+
+/* Level colours */
+.bubble[data-level="10"] { background: var(--color-l10); }
+.bubble[data-level="15"] { background: var(--color-l15); }
+.bubble[data-level="17"] { background: var(--color-l17); }
+.bubble[data-level="20"] { background: var(--color-l20); }
+.bubble[data-level="30"] { background: var(--color-l30); }
+
+/* Faded siblings */
+.bubble--faded {
+    opacity: 0.2;
+    pointer-events: none;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Nav (selected) bubble — smaller, white ring */
+.bubble--nav {
+    padding: 5px 14px;
+    font-size: 12px;
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.bubble--nav:hover {
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 3px 10px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+/* ─── Detail panel ──────────────────────────────────────────────────────────── */
+#detail-panel {
+    display: none;
+    margin: 24px 24px 28px;
+    padding: 20px 24px;
+    background: #f7f8fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    border-left: 4px solid var(--color-l30);
+}
+
+#detail-panel.visible {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+#detail-title {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #1f2328;
+    margin-bottom: 8px;
+}
+
+#detail-description {
+    font-size: 0.95em;
+    color: #57606a;
+    line-height: 1.7;
+}
+
+/* ─── Loading / error states ────────────────────────────────────────────────── */
+.loading {
+    color: #667eea;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.error {
+    color: #c0392b;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+/* ─── Footer ────────────────────────────────────────────────────────────────── */
+footer {
+    max-width: 1400px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px 24px;
+    background: #f7f8fa;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+footer p {
+    font-size: 12px;
+    color: #57606a;
+    line-height: 1.6;
+    text-align: center;
+}
+
+footer a {
+    color: #3b82d4;
+}

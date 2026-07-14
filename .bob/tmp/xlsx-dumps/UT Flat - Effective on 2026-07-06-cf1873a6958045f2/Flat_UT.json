@@ -1,0 +1,2597 @@
+{
+  "name": "Flat UT",
+  "headers": [
+    "L10 ",
+    "L15 ",
+    "L17 ",
+    "L20 ",
+    "L30 ",
+    "L30 Description"
+  ],
+  "rows": [
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "PaaS Third Party and True Up",
+      "IBM Managed Third Party Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "PaaS Third Party and True Up",
+      "Third Party Services PaaS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "PaaS Third Party and True Up",
+      "Spectrum Pay Per Use",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "Cloud Native PaaS",
+      "Observability",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "Cloud Native PaaS",
+      "Platform Core",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "Cloud Native PaaS",
+      "Cloud Containers",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "Cloud Native PaaS",
+      "Cloud Security Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "Cloud Native PaaS",
+      "Cloud Data Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud PaaS",
+      "Cloud Native PaaS",
+      "Deployment Automation - CD",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud IaaS",
+      "IaaS Classic Portfolio",
+      "IaaS Classic",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud IaaS",
+      "Cloud Native IaaS",
+      "Cloud Object Storage",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud IaaS",
+      "Cloud Native IaaS",
+      "VPC Offerings",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud IaaS",
+      "VMware Managed",
+      "VMware Managed and Solutions",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud IaaS",
+      "Power Virtual Server",
+      "SAP Rise Premium Supplier",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud IaaS",
+      "Power Virtual Server",
+      "PowerVS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud IaaS",
+      "IaaS Third Party and TrueUp",
+      "IaaS Third Party",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud Expert Labs & Support",
+      "Expert Labs & Support for Public Cloud",
+      "Expert Labs for Public Cloud",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud Expert Labs & Support",
+      "Expert Labs & Support for Public Cloud",
+      "IBM Cloud Premium & Advanced Support",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud Contracts",
+      "Public Cloud Contracts Portfolio",
+      "IBM Cloud Enterprise Savings Plan (Annuity Use Only)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud Contracts",
+      "Public Cloud Contracts Portfolio",
+      "SAP Rise on Power VS Contract",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud Contracts",
+      "Public Cloud Contracts Portfolio",
+      "IBM Cloud Subscription (BP & Annuity Use Only)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud Contracts",
+      "Public Cloud Contracts Portfolio",
+      "Power VSI Enterprise Savings Plan (Annuity Use Only)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Public Cloud Platform",
+      "Public Cloud Contracts",
+      "Public Cloud Contracts Portfolio",
+      "Power VSI Subscription - (BP & Annuity Use Only)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Business Analytics",
+      "watsonx BI",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Business Analytics",
+      "Business Analytics Enterprise",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Business Analytics",
+      "SPSS Modeler",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Business Analytics",
+      "Cognos Analytics",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Business Analytics",
+      "Planning Analytics",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Business Analytics",
+      "Business Analytics Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Workflow Automation",
+      "Process Automation",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Workflow Automation",
+      "webMethods BPMS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Workflow Automation",
+      "Workflow Automation Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Workflow Automation",
+      "Cloud Pak for Business Automation",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Workflow Automation",
+      "Business Automation Expert Labs",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "Workflow Automation",
+      "Decision Intelligence",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "AI Assistants",
+      "Bob",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "AI Assistants",
+      "Project Willow - Data",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "AI Assistants",
+      "watsonx Orchestrate",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI Productivity",
+      "AI Assistants",
+      "AI Assistants Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI/ML Ops",
+      "AI Tools",
+      "Mistral",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI/ML Ops",
+      "AI Tools",
+      "AI Tools Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI/ML Ops",
+      "AI Tools",
+      "watsonx.ai",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI/ML Ops",
+      "AI Governance",
+      "watsonx.governance",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI/ML Ops",
+      "AI Governance",
+      "OpenPages",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "AI/ML Ops",
+      "AI Governance",
+      "AI Governance Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "Elastic",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "Cloudera & Hadoop",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "EnterpriseDB",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "Db2",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "Informix",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "SingleStore",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "CockroachDB",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "Databases Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "Netezza",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Databases",
+      "MongoDB",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "Knowledge Catalog",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "Manta",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "Decision Optimization",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "Optim",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "Cloud Pak for Data",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "watsonx.data intelligence",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "Master Data Management",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "Data Intelligence Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "Data Product Hub",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Intelligence",
+      "SPSS Statistics",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "watsonx.data integration",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "Streamsets",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "Janes",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "DataStage",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "Data Fabric Ecosystem & Emerging",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "Data Replication",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "Astronomer",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "Data Integration Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Integration",
+      "Databand",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Lakehouse",
+      "Open Core",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Lakehouse",
+      "DataStax",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Lakehouse",
+      "watsonx.data",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Content Management",
+      "Content Manager (CM8)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Content Management",
+      "Content Management Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Content Management",
+      "Content Manager On Demand",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Content Management",
+      "FileNet Content Manager",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Content Management",
+      "Capture",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Security",
+      "Guardium Discover and Classify",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Security",
+      "Guardium Data Security Center",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Security",
+      "Guardium AI Protection",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Security",
+      "Guardium Cryptography Management",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Security",
+      "Data Security Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Security",
+      "Guardium Data Protection",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Security",
+      "Guardium Data Encryption",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Data Fabric",
+      "Data Security",
+      "Guardium Key Lifecycle Management",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Confluent",
+      "Confluent Portfolio",
+      "Confluent Cloud",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Confluent",
+      "Confluent Portfolio",
+      "Confluent Platform",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Confluent",
+      "Confluent Portfolio",
+      "Confluent WarpStream",
+      null
+    ],
+    [
+      "IBM Software",
+      "Data Platform",
+      "Confluent",
+      "Confluent Portfolio",
+      "Confluent Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat",
+      "Red Hat Market",
+      "Red Hat Portfolio",
+      "Red Hat Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat",
+      "Red Hat Market",
+      "Red Hat Portfolio",
+      "RHEL",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat",
+      "Red Hat Market",
+      "Red Hat Portfolio",
+      "OpenShift",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat",
+      "Red Hat Market",
+      "Red Hat Portfolio",
+      "Ansible",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Infrastructure Lifecycle Management",
+      "Terraform",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Infrastructure Lifecycle Management",
+      "Consul",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Infrastructure Lifecycle Management",
+      "Vault",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Infrastructure Lifecycle Management",
+      "HashiCorp Portfolio Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Infrastructure Lifecycle Management",
+      "HashiCorp Committed Spend",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Infrastructure Lifecycle Management",
+      "Infrastructure Lifecycle Management Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Infrastructure Lifecycle Management",
+      "Nomad",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Network Management",
+      "Hybrid Cloud Network Automation",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Network Management",
+      "Network Management Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Network Management",
+      "NS1",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Network Management",
+      "SevOne",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Network Management",
+      "Edge Application Manager",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Network Management",
+      "Network Intelligence",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Identity and Access Mgmt",
+      "Expert Essentials IAM",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Identity and Access Mgmt",
+      "Verify Identity Protection",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Identity and Access Mgmt",
+      "Calistoga",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Identity and Access Mgmt",
+      "MaaS360 Mobile Security and Management",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Identity and Access Mgmt",
+      "Trusteer Fraud Protection",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Identity and Access Mgmt",
+      "Verify Identity Governance",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Identity and Access Mgmt",
+      "Verify",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Infrastructure Automation",
+      "Identity and Access Mgmt",
+      "Verify Privileged Identity",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "DataPower Software",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "MQ",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "MQ Appliances",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "API Connect",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "DataPower Operations Dashboard",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "Cloud Pak for Integration",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "webMethods API Management",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "Event Automation",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "WebSphere Service Registry/Repository",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "App Connect",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "Aspera",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "webMethods Hybrid Integration",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "Application Integration Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "webMethods Integration",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "Akamai Advanced API Security",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "Financial Transactions,Payments & Insights",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "Safer Payments",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "DataPower Appliances",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Integration",
+      "webMethods Data Exchange",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "WebSphere Application Server",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "DevOps Ecosystem",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "Legacy App Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "WebSphere Maintenance Mode",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "Application Development Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "JSphere Suite for Java",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "Enterprise Build of Quarkus",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "Cloud Pak for Applications",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "DevOps",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Application Development",
+      "Spectrum High Performance Computing",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Engineering Lifecycle Management",
+      "Engineering Lifecycle Management Suite",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Engineering Lifecycle Management",
+      "Engineering Lifecycle Management Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "Engineering Lifecycle Management",
+      "Connected Vehicle Insights",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "B2B Integration",
+      "Blockchain Support",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "B2B Integration",
+      "Sterling Managed File Transfer",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "B2B Integration",
+      "Sterling Transformation Extender",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "B2B Integration",
+      "Sterling Data Exchange SaaS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "B2B Integration",
+      "Sterling Partner Engagement Manager",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "B2B Integration",
+      "Sterling B2B Integration",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Application Development & Integration",
+      "B2B Integration",
+      "Video Streaming",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Security Threat Management",
+      "Security Threat Mgmt",
+      "QRadar SIEM",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Security Threat Management",
+      "Security Threat Mgmt",
+      "QRadar SOAR",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Security Threat Management",
+      "Security Threat Mgmt",
+      "QRadar Suite (Software)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Flexera One with IBM Observability",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Concert Platform",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "IBM FinOps",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Workload Automation",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Operations Insights",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Instana",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Concert for Power",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Cloud Pak for AIOps",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Turbonomic",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "IT Automation Heritage",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Observability Portfolio",
+      "Sovereign Core",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "FinOps & IT Financial Management",
+      "Cloudability",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "FinOps & IT Financial Management",
+      "Apptio",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "FinOps & IT Financial Management",
+      "FinOps Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "FinOps & IT Financial Management",
+      "Kubecost",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "FinOps & IT Financial Management",
+      "IT Financial Management Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "FinOps & IT Financial Management",
+      "Targetprocess",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Asset Lifecycle Management",
+      "TRIRIGA",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Asset Lifecycle Management",
+      "Maximo",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Asset Lifecycle Management",
+      "Sterling Order Management System",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Asset Lifecycle Management",
+      "Asset Lifecycle Management Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Asset Lifecycle Management",
+      "Envizi",
+      null
+    ],
+    [
+      "IBM Software",
+      "Automation Platform",
+      "Technology Business Management",
+      "Asset Lifecycle Management",
+      "Environmental Intelligence",
+      null
+    ],
+    [
+      "IBM Software",
+      "IBM Software Top and Cross Brand",
+      "IBM Software Cross Brand Market",
+      "IBM Software Cross Brand Portfolio",
+      "SaaS Committed Spend",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Tools",
+      "watsonx Code Assistant for Z",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Tools",
+      "IDzEE & ADFz",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Tools",
+      "Test Tools - TAZ",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Tools",
+      "ADDI",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Tools",
+      "GitLab for IBM Z",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Tools",
+      "Z Application Development Tools Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Languages",
+      "Automatic Binary Optimizer for z/OS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Languages",
+      "Enterprise COBOL for z/OS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Languages",
+      "Z Compilers",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Languages",
+      "Z Application Development Languages Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Application Development Languages",
+      "COBOL Upgrade Advisor for z/OS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Host Software",
+      "Host Integration (HATS and HACP)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Host Software",
+      "Encore",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application Development",
+      "Z Host Software",
+      "Z Host Software Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z AI",
+      "Synthetic Data Sets",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z AI",
+      "Z AI Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z AI",
+      "AI Toolkit for IBM Z and IBM LinuxONE",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z AI",
+      "Z Platform for Apache Spark & Python AI Toolkit for zOS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z AI",
+      "Machine Learning for IBM z/OS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Databases for z/OS",
+      "Z Data AI",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Databases for z/OS",
+      "Db2 Z Utility Tools",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Databases for z/OS",
+      "Db2 Z Performance Tools",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Databases for z/OS",
+      "Db2 for z/OS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Databases for z/OS",
+      "Z Data Access",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Databases for z/OS",
+      "Databases for z/OS Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Databases for z/OS",
+      "Db2 Z Administration Tools",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "webMethods ApplinX",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "Confluent Platform for Z and LinuxONE",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "Z Digital Integration Hub",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "IBM Z and Cloud Modernization Stack",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "TXSeries",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "CICS Transaction Gateway",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "z/OS Connect Enterprise Edition",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "webMethods EntireX",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "CICS TX",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "Z Application Integration Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application Integration",
+      "Batch Modernization",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application and Data",
+      "CICS Transaction Server for z/OS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application and Data",
+      "IMS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application and Data",
+      "TPF",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application and Data",
+      "z/OS Container Platform",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application and Data",
+      "Z Application and Data Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Application and Data",
+      "zCX Foundation for Red Hat OpenShift",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "zOS",
+      "zOS Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "zOS",
+      "z/OS Communication Server",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "zOS",
+      "DFSMS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Z Open Automation Utilities",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Red Hat Ansible Certified Content for IBM Z",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Zowe",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Cloud Infrastructure Center",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Z Automation Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Hyper Protect Crypto Services - Private Cloud",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Nomad Self-Managed for Z and LinuxONE",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Terraform Self-Managed for Z and LinuxONE",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Automation",
+      "Cloud Paks for Linux on Z",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "zSecure",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "zSecure Secret Manager",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "zSecure Access",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "Vault Self-Managed for Z and LinuxONE",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "zSecure Detection",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "Data Set Key Rotation",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "Z Crypto Discovery & Inventory",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "zMFA",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "zSecure Compliance",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "Unified Key Orchestrator",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z Application and Data Management",
+      "Z Security",
+      "Unified Key Orchestrator for Containers",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Z Service Management Suite",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Z IT Automation",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Z Service Automation Suite",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Z IT Monitoring",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Z Workload Scheduling",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Z Observability and Automation Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Z Monitoring Suite",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Concert for Z",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Observability and Automation",
+      "Z Observability Connect",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Performance Analysis and Optimization",
+      "Z Log and Data Analytics",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Performance Analysis and Optimization",
+      "Z Table Accelerator",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Performance Analysis and Optimization",
+      "Z Performance Analysis and Optimization Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Performance Analysis and Optimization",
+      "Z Performance and Capacity",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Performance Analysis and Optimization",
+      "Z Workload Interaction Navigator",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Performance Analysis and Optimization",
+      "Intellimagic Vision for z/OS Storage",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Performance Analysis and Optimization",
+      "IntelliMagic Vision for z/OS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Storage Software",
+      "Z Storage Software Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Storage Software",
+      "Z Storage Management",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Management Tools",
+      "watsonx Assistant for Z",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Management Tools",
+      "Z Software Asset Management",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Management Tools",
+      "Z Management Tools Placeholder",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Management Tools",
+      "IMS Tools",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Management Tools",
+      "CICS Tools",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Management Tools",
+      "zVM Tools",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "Z IT Operations Management",
+      "Z Management Tools",
+      "Z Backup Recovery",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "zTPS Operations / Services Market",
+      "zTPS Operations / Services",
+      "Restricted Use Only - zExpansion Future Opportunities",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "zTPS Operations / Services Market",
+      "zTPS Operations / Services",
+      "Expert Labs for z/TPS (69SW-335)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Z TPS",
+      "zTPS Operations / Services Market",
+      "zTPS Operations / Services",
+      "Expert Labs SMPO for z/TPS (69SW-339)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat Marketplace",
+      "Red Hat Marketplace Market",
+      "Red Hat Marketplace Portfolio",
+      "Third Party Platform as a Service (PaaS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat Marketplace",
+      "Red Hat Marketplace Market",
+      "Red Hat Marketplace Portfolio",
+      "Third Party Infrastructure as a Service (IaaS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat Marketplace",
+      "Red Hat Marketplace Market",
+      "Red Hat Marketplace Portfolio",
+      "Third Party Software",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat Marketplace",
+      "Red Hat Marketplace Market",
+      "Red Hat Marketplace Portfolio",
+      "Third Party Professional Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat Marketplace",
+      "Red Hat Marketplace Market",
+      "Red Hat Marketplace Portfolio",
+      "Red Hat Marketplace Platform Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Red Hat Marketplace",
+      "Red Hat Marketplace Market",
+      "Red Hat Marketplace Portfolio",
+      "Third Party Support Services",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Storage for Data Resiliency SW Market",
+      "Storage for Data Resiliency SW",
+      "Storage Protect for Cloud",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Storage for Data Resiliency SW Market",
+      "Storage for Data Resiliency SW",
+      "Storage Defender SW (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Storage for Data Resiliency SW Market",
+      "Storage for Data Resiliency SW",
+      "Storage Suite",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Storage for Data Resiliency SW Market",
+      "Storage for Data Resiliency SW",
+      "Storage Protect (incl. DSI SW)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Storage for Data Resiliency SW Market",
+      "Storage for Data Resiliency SW",
+      "Storage CDM & Sentinel",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Storage Suite for IBM Cloud Paks",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Storage Scale as a Service SW",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Ceph as a Service SW",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Fusion for watsonx (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Storage Scale SW (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Cloud Object Storage SW (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Fusion HCI SW & Fusion SDS (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Storage Ceph SW (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Fusion Platform SW Market",
+      "Fusion Platform SW",
+      "Storage Discover",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Storage Tape SW Market",
+      "Storage Tape SW",
+      "Storage Archive",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Traditional Distributed External Storage SW Market",
+      "Traditional Distributed External Storage SW",
+      "Spectrum Accelerate",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Traditional Distributed External Storage SW Market",
+      "Traditional Distributed External Storage SW",
+      "Legacy XIV SW (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Distributed and Mainframe Primary Storage SW Market",
+      "Distributed and Mainframe Primary Storage SW",
+      "Storage DS8K SW (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Distributed and Mainframe Primary Storage SW Market",
+      "Distributed and Mainframe Primary Storage SW",
+      "Storage FlashSystem FS5xxx SW - Legacy (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Distributed and Mainframe Primary Storage SW Market",
+      "Distributed and Mainframe Primary Storage SW",
+      "Storage Virtualize",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Distributed and Mainframe Primary Storage SW Market",
+      "Distributed and Mainframe Primary Storage SW",
+      "Storage Insights/Pro & Spectrum Control",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Distributed and Mainframe Primary Storage SW Market",
+      "Distributed and Mainframe Primary Storage SW",
+      "Storage FlashSystem FS9xxx SW - Legacy (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Distributed and Mainframe Primary Storage SW Market",
+      "Distributed and Mainframe Primary Storage SW",
+      "Storage FlashSystem FS7xxx SW - Legacy (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Storage TPS",
+      "Storage Networking SW Market",
+      "Storage Networking SW",
+      "Storage Networking SW (TPS)",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Acquisition",
+      "Renewals Only - Kenexa Talent Acquisition Suite",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Acquisition",
+      "Renewals Only - Watson Recruitment",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Acquisition",
+      "Renewals Only - Watson Candidate Assistant",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Development",
+      "Renewals Only - Kenexa LCMS Premier",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Development",
+      "Renewals Only - Watson Career Coach",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Development",
+      "Renewals Only - Kenexa LMS",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Development",
+      "Renewals Only - Kenexa Talent Frameworks",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Development",
+      "Renewals Only - Legacy Offerings",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Engagement",
+      "Renewals Only - Kenexa Employee Voice",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Analytics",
+      "Renewals Only - Watson Talent Insight",
+      null
+    ],
+    [
+      "IBM Software",
+      "Talent Management Solutions",
+      "Cognitive Talent Management",
+      "Renewals Only - Talent Assessments",
+      "Renewals Only - Assessments",
+      null
+    ],
+    [
+      "IBM Software",
+      "Power TPS",
+      "Power TPS Market",
+      "Power TPS Portfolio",
+      "Bob Premium Package for i",
+      null
+    ],
+    [
+      "IBM Software",
+      "Power TPS",
+      "Power TPS Market",
+      "Power TPS Portfolio",
+      "Power Compilers",
+      null
+    ],
+    [
+      "IBM Software",
+      "Power TPS",
+      "Power TPS Market",
+      "Power TPS Portfolio",
+      "Power Middleware",
+      null
+    ]
+  ]
+}

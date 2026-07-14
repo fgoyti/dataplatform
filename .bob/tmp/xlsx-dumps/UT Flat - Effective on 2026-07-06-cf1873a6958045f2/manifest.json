@@ -1,0 +1,19 @@
+{
+  "source": "web/UT Flat - Effective on 2026-07-06.xlsx",
+  "contentHash": "cf1873a6958045f2",
+  "sheets": [
+    {
+      "name": "Flat UT",
+      "file": "Flat_UT.json",
+      "rowCount": 323,
+      "headers": [
+        "L10 ",
+        "L15 ",
+        "L17 ",
+        "L20 ",
+        "L30 ",
+        "L30 Description"
+      ]
+    }
+  ]
+}

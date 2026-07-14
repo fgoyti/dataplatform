@@ -1,0 +1,21 @@
+{
+  "source": "tree/UT Hierarchy - Effective on 2026-05-04.xlsx",
+  "contentHash": "7c2058cf4141d2bd",
+  "sheets": [
+    {
+      "name": "IBM Software",
+      "file": "IBM_Software.json",
+      "rowCount": 93,
+      "headers": [
+        "UT Level",
+        "UT Parent",
+        "UT Code",
+        "Description",
+        "Level 15",
+        "L15 Description",
+        "Level 17",
+        "L17 Description"
+      ]
+    }
+  ]
+}

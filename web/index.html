@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Software Hierarchy</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="accent-bar"></div>
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="ibm-cube">IBM</div>
+                </div>
+                <div class="text-section">
+                    <h1>Software <span class="highlight">Hierarchy</span></h1>
+                    <p class="subtitle">Click a bubble to drill down through the hierarchy</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="intro-panel">
+            <p>
+                Welcome! This tool lets IBM business partners explore the full IBM software catalog —
+                from broad brand families down to individual product offerings.
+                Use it to identify the right solution for a customer's need, understand where a
+                product sits in IBM's portfolio, or discover adjacent offerings in the same family.
+            </p>
+            <p class="intro-hint">
+                <strong>How to navigate:</strong> Start by clicking any bubble below to drill into
+                that category. A breadcrumb trail will appear at the top so you always know where
+                you are. Click any step in the breadcrumb to jump back up, or click the
+                <strong>← Back</strong> button to go up one level at a time.
+            </p>
+            <div class="search-wrap">
+                <label for="l30-search" class="search-label">Search products (L30):</label>
+                <div class="search-input-wrap">
+                    <input
+                        type="text"
+                        id="l30-search"
+                        class="search-input"
+                        placeholder="Type a product name…"
+                        autocomplete="off"
+                        aria-autocomplete="list"
+                        aria-controls="search-dropdown"
+                        aria-expanded="false"
+                    />
+                    <div id="search-dropdown" class="search-dropdown" role="listbox" aria-label="Product suggestions"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="nav-row" aria-label="Navigation path"></div>
+
+        <div id="levels-area">
+            <div class="loading">Loading hierarchy data…</div>
+        </div>
+
+        <div id="detail-panel">
+            <h3 id="detail-title"></h3>
+            <p id="detail-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <strong>Disclaimer:</strong> This visualisation was created by Frank Goytisolo
+            (using <a href="https://bob.ibm.com" target="_blank">IBM Bob</a>) for informational
+            purposes only. Data effective 2026-07-06. The information is provided "as is" without
+            warranty of any kind. This content does not constitute official IBM information or
+            guidance. Users should verify all information independently and consult official IBM
+            resources for authoritative information.
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
